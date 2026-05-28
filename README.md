@@ -1,22 +1,19 @@
 # SolScan AI
 
-SolScan AI is a Solana-native wallet, token, and bundle intelligence dashboard
-for tracking top memecoin activity in real time. This first phase is
-frontend-only and uses mock activity data while the RPC, indexer, alerting, and
-persistence layers are deferred.
+SolScan AI is a Solana wallet intelligence dashboard for tracking top memecoin
+wallets in real time. This first phase is frontend-only and uses mock activity
+data while the RPC, indexer, alerting, and persistence layers are deferred.
 
 ## Frontend Direction
 
-- Track smart money, fresh buys, whale wallets, wallet clusters, and KOL-linked
-  wallet activity.
-- Monitor SPL token movements, token CAs, bundle activity, and BUY, SELL, and
-  TRANSFER actions.
+- Track smart money, fresh buys, whale wallets, and KOL-linked wallet activity.
+- Monitor SPL token movements with BUY, SELL, and TRANSFER actions.
 - Display wallet activity with shortened Solana addresses, SOL size, estimated
   USD value, timestamps, and signal badges.
 - Position the product as a trading intelligence dashboard, not a generic block
   explorer.
-- Keep the interface premium, dark, responsive, and aligned with Solana-inspired
-  purple gradients, neon green accents, cyan highlights, and soft violet glows.
+- Keep the interface premium, dark, responsive, and aligned with Solana
+  purple/green accents.
 
 ## Stack
 
