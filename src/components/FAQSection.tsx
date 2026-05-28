@@ -11,12 +11,12 @@ const faqs: FAQ[] = [
   {
     question: "What is SolScan AI?",
     answer:
-      "SolScan AI is a Solana wallet intelligence dashboard for tracking top memecoin wallets, smart money activity, fresh buys, SPL token movements, and KOL-linked wallets."
+      "SolScan AI is a Solana-native intelligence dashboard for tracking wallet clusters, SPL token CAs, memecoin flow, smart money, whale wallets, and bundle activity."
   },
   {
-    question: "Is this a Solana block explorer?",
+    question: "Is this a generic Solana explorer?",
     answer:
-      "No. This frontend is positioned around trader-ready wallet intelligence rather than generic block explorer search, blocks, validators, or raw transaction browsing."
+      "No. This frontend is positioned around trader-ready wallet, token, and bundle intelligence rather than validator, block, or raw transaction browsing."
   },
   {
     question: "Is the live feed connected to Solana RPC yet?",
@@ -26,7 +26,7 @@ const faqs: FAQ[] = [
   {
     question: "What wallet signals can I monitor?",
     answer:
-      "The interface is prepared for Fresh Wallet, Whale, Smart Money, and KOL Wallet labels across BUY, SELL, and TRANSFER events sized in SOL with estimated USD values."
+      "The interface is prepared for Fresh Wallet, Whale Wallet, Smart Money, Bundle Signal, and KOL Wallet labels across BUY, SELL, and TRANSFER events sized in SOL with estimated USD values."
   }
 ];
 
@@ -45,11 +45,11 @@ export default function FAQSection() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]"
+            className="overflow-hidden rounded-lg border border-violet-300/15 bg-white/[0.035] shadow-[0_0_24px_rgba(153,69,255,0.07)]"
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="flex w-full items-center justify-between gap-4 p-6 text-left transition-colors hover:bg-white/[0.04] focus:outline-none"
+              className="flex w-full items-center justify-between gap-4 p-6 text-left transition-colors hover:bg-violet-400/[0.04] focus:outline-none"
             >
               <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
               <svg

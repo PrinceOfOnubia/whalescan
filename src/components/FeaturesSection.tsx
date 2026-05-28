@@ -6,13 +6,13 @@ export default function FeaturesSection() {
       icon: WalletCards,
       title: "Wallet intelligence",
       description:
-        "Follow whale wallets, fresh wallets, and profitable Solana memecoin traders without digging through raw transaction pages."
+        "Track whale wallets, fresh wallets, and profitable Solana memecoin traders by cluster instead of raw transaction pages."
     },
     {
       icon: Coins,
-      title: "SPL token movement",
+      title: "SPL token and CA tracking",
       description:
-        "See buys, sells, transfers, SOL sizing, and estimated USD value across the tokens your watchlist cares about."
+        "See buys, sells, transfers, token CAs, SOL sizing, and estimated USD value across the SPL tokens your watchlist cares about."
     },
     {
       icon: BrainCircuit,
@@ -22,15 +22,15 @@ export default function FeaturesSection() {
     },
     {
       icon: Bell,
-      title: "Signal alerts",
+      title: "Bundle activity alerts",
       description:
-        "Preview alert-ready events for whale entries, fresh wallet accumulation, and suspicious coordinated movement."
+        "Preview coordinated entries, bundled wallet activity, whale rotations, and fresh wallet accumulation."
     },
     {
       icon: Crosshair,
       title: "Memecoin focus",
       description:
-        "Built around Solana trading workflows, not generic block explorer navigation or protocol analytics."
+        "Built around Solana trading workflows, not generic validator, block, or protocol analytics."
     },
     {
       icon: Users,
@@ -45,15 +45,15 @@ export default function FeaturesSection() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-300">
-            Intelligence layer
+            Solana intelligence layer
           </p>
           <h2 className="mt-2 text-3xl font-bold text-white">
-            Designed for Solana wallet decisions
+            Designed for wallet, token, and bundle decisions
           </h2>
           <p className="mt-3 text-slate-400">
             SolScan AI focuses the interface on the activity traders actually
-            scan: wallets, SPL tokens, SOL-denominated movement, and signal
-            quality.
+            scan: wallet clusters, token CAs, SPL tokens, SOL-denominated
+            movement, and bundle signal quality.
           </p>
         </div>
 
@@ -64,9 +64,9 @@ export default function FeaturesSection() {
             return (
               <div
                 key={feature.title}
-                className="rounded-lg border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-emerald-400/30 hover:bg-white/[0.06]"
+                className="rounded-lg border border-violet-300/15 bg-white/[0.035] p-6 shadow-[0_0_28px_rgba(153,69,255,0.08)] transition-colors hover:border-emerald-300/35 hover:bg-white/[0.055]"
               >
-                <div className="mb-5 grid h-11 w-11 place-items-center rounded-lg bg-purple-500/15 text-purple-200">
+                <div className="mb-5 grid h-11 w-11 place-items-center rounded-lg bg-gradient-to-br from-violet-500/25 to-cyan-300/10 text-violet-100">
                   <Icon size={21} />
                 </div>
                 <h3 className="text-lg font-semibold text-white">

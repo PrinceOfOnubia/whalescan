@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "SolScan AI",
   description:
-    "Track top Solana memecoin wallets, smart money, SPL token movements, and KOL-linked wallet activity in real time.",
+    "Real-time Solana tracking for smart money, memecoins, whale wallets, token CAs, wallet clusters, and bundle activity.",
 };
 
 export default function RootLayout({
